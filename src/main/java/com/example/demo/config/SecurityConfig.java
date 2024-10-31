@@ -189,6 +189,7 @@ public class SecurityConfig {
         http.httpBasic(Customizer.withDefaults());
         http.sessionManagement(sessionManagement -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         return http.build();
+
     }
 
 //    @Bean
